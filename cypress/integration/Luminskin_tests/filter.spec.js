@@ -31,7 +31,7 @@ describe('Filtering Test', () => {
     cy.xpath('//h1').should('be.visible')
     cy.xpath('//h1').contains('Hair & Body Care')
 })
-    it('should select Hair and Body from the drop down', () => {
+    it('should select Accesories from the drop down', () => {
     cy.xpath('//div[3]/div/div/div/div[2]/div/select').select('accessories')
     cy.xpath('//h1').should('be.visible')
     cy.xpath('//h1').contains('Accessories')
